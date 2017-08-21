@@ -17,7 +17,7 @@ class App extends Component {
   }
 
   render() {
-    const { headerTitle = 'Authentice' } = { Titles };
+    const { headerTitle = 'Authentify' } = { Titles };
 
     return (
       <View>

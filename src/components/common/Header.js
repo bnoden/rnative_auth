@@ -15,17 +15,18 @@ const Header = props => {
 
 const colors = {
   bgblue: '#4B70BF',
+  bggreen: '#4BBF70',
   fontwhite: '#F2F7FC',
   headershade: '#1E376E'
 };
-const { bgblue, fontwhite, headershade } = colors;
+const { bggreen, fontwhite, headershade } = colors;
 
 const styles = {
   viewStyle: {
-    backgroundColor: bgblue,
+    backgroundColor: bggreen,
     justifyContent: 'center',
     alignItems: 'center',
-    height: 70,
+    height: 50,
     paddingTop: 16,
     shadowColor: headershade,
     shadowOffset: { width: 0, height: 3 },
