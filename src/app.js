@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import firebase from 'firebase';
 import { Header, Titles } from './components/common';
+import LoginForm from './components/LoginForm';
 
 class App extends Component {
   componentWillMount() {
@@ -16,14 +17,12 @@ class App extends Component {
   }
 
   render() {
-    const { appTitle = 'App Title', headerTitle = 'Header Title' } = { Titles };
+    const { headerTitle = 'Authentice' } = { Titles };
 
     return (
       <View>
         <Header headerText={headerTitle} />
-        <Text>
-          {appTitle}
-        </Text>
+          <LoginForm />
       </View>
     );
   }

@@ -16,17 +16,18 @@ const Header = props => {
 const colors = {
   bgblue: '#4B70BF',
   fontwhite: '#F2F7FC',
-  shadow: '#1E376E'
+  headershade: '#1E376E'
 };
+const { bgblue, fontwhite, headershade } = colors;
 
 const styles = {
   viewStyle: {
-    backgroundColor: colors.bgblue,
+    backgroundColor: bgblue,
     justifyContent: 'center',
     alignItems: 'center',
     height: 70,
     paddingTop: 16,
-    shadowColor: colors.shadow,
+    shadowColor: headershade,
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.6,
     elevation: 2,
@@ -35,7 +36,7 @@ const styles = {
   textStyle: {
     fontSize: 22,
     fontWeight: 'bold',
-    color: colors.fontwhite
+    color: fontwhite
   }
 };
 

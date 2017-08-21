@@ -1,8 +1,4 @@
-import React from 'react';
-
-const Titles = {
+export const Titles = {
   appTitle: '',
   headerTitle: ''
 };
-
-export default { Titles };
