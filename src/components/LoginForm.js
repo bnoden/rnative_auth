@@ -26,27 +26,20 @@ class LoginForm extends Component {
   }
 
   onLoginFail() {
-    this.setState({ error: 'Authentication failed.', loading: false });
+    this.setState({ loading: false, error: 'Authentication failed.' });
   }
-
   onLoginSuccess() {
-    this.setState({
-      loading: false,
-      error: '',
-      password: '',
-      email: ''
-    });
+    this.setState({ loading: false, error: '', password: '', email: '' });
   }
 
   renderButton() {
-    const btnLoginText = 'Log in';
     if (this.state.loading) {
       return <Spinner size="small" />;
     }
 
     return (
       <Button className="btnLogin" onPress={this.onButtonPress.bind(this)}>
-        {btnLoginText}
+        Log in
       </Button>
     );
   }
