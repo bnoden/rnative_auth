@@ -8,7 +8,6 @@ const Spinner = ({ size }) =>
 
 const styles = {
   spinnerStyle: {
-    flex: 1,
     flexDirection: 'row',
     justifyContent: 'center'
   }
